@@ -69,6 +69,7 @@ Frontend dependencies (loaded via CDN):
 - **Web Interface**: The frontend uses Select2 to fetch movie titles dynamically via the `/api/movies` endpoint. Users select a movie, and the form submits the `movie_id` to the server, which returns recommendations.
 - **Recommendation Logic**: The `get_content_recommendations` function computes cosine similarity between the TF-IDF vector of the selected movie and all other movies, returning the top 10 most similar movies.
 - **ILS Evaluation**: The notebook samples 1000 movies, computes ILS scores for their recommendations, and visualizes the results with a bar plot.
+<img width="1314" height="646" alt="image" src="https://github.com/user-attachments/assets/559daebb-5753-4c28-843a-173bf318a432" />
 
 ## Notes
 - Ensure `movies_df.pkl` and `tfidf_matrix.pkl` are present, as they contain the preprocessed movie data and TF-IDF matrix.
